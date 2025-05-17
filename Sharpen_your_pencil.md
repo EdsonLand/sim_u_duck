@@ -79,13 +79,13 @@ Al detectar cuellos de botella en funciones críticas, fue necesario reescribirl
 # Sharpen Your Pencil 3
 ### 1. ¿Qué harías con el nuevo diseño si necesitas agregar vuelo con propulsión a cohete a la app SimUDuck?
 
-- R.-Usando el nuevo diseño basado en el patrón Strategy, simplemente crearía una nueva clase llamada FlyRocketPowered que implemente la interfaz FlyBehavior.
+- R.-Usando el nuevo diseño basado en el patrón Strategy, simplemente crearía una nueva clase llamada FlyRocketPowered que implemente la interfaz IFlyBehavior.
 Esta clase definiría el método fly() para simular el vuelo con cohete.
 
 ### Ejemplo:
 
 ``` 
-public class FlyRocketPowered implements FlyBehavior {
+public class FlyRocketPowered implements IFlyBehavior {
     public void fly() {
     System.out.println("I’m flying with a rocket!");
     }
